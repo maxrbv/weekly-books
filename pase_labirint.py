@@ -68,7 +68,7 @@ class Labirint:
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         }
 
-        self._chunk_size = 10000
+        self._chunk_size = 100000000
         self._get_chunks_parsed()
 
         self._workers = 10
@@ -118,7 +118,7 @@ class Labirint:
             json.dump(self._books_info, file, ensure_ascii=False, indent=4)
 
     def _save_to_excel(self):
-        folder_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\pre_final\labirint'
+        folder_path = ASSETS_DIR / 'pre_final' / 'labirint'
         json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
 
         combined_df = pd.DataFrame()
