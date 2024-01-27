@@ -1,8 +1,11 @@
 import pandas as pd
 import json
 
+from pathlib import Path
+
+
 def labirint():
-    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\labirint_result.xlsx'
+    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\results\labirint_result_2024-01-24.xlsx'
     df = pd.read_excel(excel_file_path, engine='openpyxl')
     json_data = df.to_json(orient='records')
 
@@ -25,7 +28,7 @@ def labirint():
 
 
 def chitai():
-    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\chitai_result.xlsx'
+    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\results\chitai_result_2024-01-24.xlsx'
     df = pd.read_excel(excel_file_path, engine='openpyxl')
     json_data = df.to_json(orient='records')
 
@@ -330,10 +333,16 @@ def chitai():
 
     modified_df.to_excel('modified_chitai_result.xlsx', index=False, engine='openpyxl')
 
+def merge():
+    df1 = pd.read_excel('modified_chitai_result.xlsx')
+    df2 = pd.read_excel('modified_labirint_result.xlsx')
+    df = pd.concat([df1, df2], ignore_index=True)
+    df.to_excel('result.xlsx', index=False)
 
 
-
-chitai()
+# chitai()
+# labirint()
+merge()
 
 
 
