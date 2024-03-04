@@ -20,41 +20,42 @@ class Chitai:
         self._articles_list = None
         self._read_articles()
         self._cookies = {
-            '__ddg1_': 'r6HypZ7lTQmcZWfDVdME',
-            'refresh-token': '',
-            'access-token': 'Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDY0NjcwNjQsImlhdCI6MTcwNjI5OTA2NCwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjRjNjJlNTgyMGYzNzI3N2ZkNDQ1MTZiYTIxNzMwODNlZWU5MTA0ZjlmNmRhYTA4ZWNmYjk4MGZhMzcwZmE1NmYiLCJ0eXBlIjoxMH0.GlDDl6ddPkPRDnefmSWenmYiIj486QZG8hQ33v_IgWk',
-            '_ga': 'GA1.1.2095788095.1706299066',
-            'tmr_lvid': '095bdb4e343f2b80995fb44fa12d7e24',
-            'tmr_lvidTS': '1702778231858',
-            '_ym_uid': '1702778232819912034',
-            '_ym_d': '1706299066',
-            'chg_visitor_id': '3ec5d99d-62e1-4921-b7d3-d43a5fa5cf41',
-            '_gpVisits': '{"isFirstVisitDomain":true,"idContainer":"100025BD"}',
-            '_ym_isad': '1',
-            'popmechanic_sbjs_migrations': 'popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1',
-            'digi_uc': 'W1sidiIsIjI5NzI4NDIiLDE3MDYzMzc1OTQwOTddLFsidiIsIlxuICAgICAgICAzMDIyNzc2XG4gICAgICAiLDE3MDYyOTkwNjU5NjddLFsidiIsIlxuICAgICAgICAyOTcyODQyXG4gICAgICAiLDE3MDYzMzc2MTcyNDhdXQ==',
-            '_gp100025BD': '{"hits":4,"vc":1,"ac":1,"a6":1}',
-            '_ga_LN4Z31QGF4': 'GS1.1.1706337593.3.1.1706337618.35.0.0',
-            'mindboxDeviceUUID': 'e1a4aabd-63c9-473a-a727-4ae5b50ace72',
-            'directCrm-session': '%7B%22deviceGuid%22%3A%22e1a4aabd-63c9-473a-a727-4ae5b50ace72%22%7D',
-        }
+    '__ddg1_': '2VXLHI0kEVc58Ik8Hj7J',
+    'refresh-token': '',
+    'tmr_lvid': '0d99a9ecfa17fe8aaa7b44ed0e367163',
+    'tmr_lvidTS': '1706361588673',
+    '_ga': 'GA1.1.870661923.1709138235',
+    '_ym_uid': '1706361589968627328',
+    '_ym_d': '1709138235',
+    'chg_visitor_id': 'b26157f5-7a3d-47f0-8d6d-49315e04a52b',
+    '_gpVisits': '{"isFirstVisitDomain":true,"idContainer":"100025BD"}',
+    'popmechanic_sbjs_migrations': 'popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1',
+    'access-token': 'Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk3MDQxNzcsImlhdCI6MTcwOTUzNjE3NywiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjU5OTY3NzVlNDE1M2JlMWU5ODk4OWViYjY5MDVjZTU4NGE4N2VhZDZiYjk2YTAyNDkwODVjYTc4MTQyOTJkOTAiLCJ0eXBlIjoxMH0.e8xnl5NKFe9T1v3NHfTa3GHVdy6xbgHxjIGWfoW9RLc',
+    '_ym_isad': '1',
+    '_ga_6JJPBGS8QY': 'GS1.1.1709536178.2.1.1709536187.0.0.0',
+    'digi_uc': 'W1sidiIsIjI5NzI4NDIiLDE3MDk1MzYxNzkwNjNdLFsidiIsIlxuICAgICAgICAyOTcyODQyXG4gICAgICAiLDE3MDk1MzYxODgwMjhdXQ==',
+    '_gp100025BD': '{"hits":2,"vc":1,"ac":1,"a6":1}',
+    '_ga_LN4Z31QGF4': 'GS1.1.1709536178.3.1.1709536189.49.0.1758121095',
+    'mindboxDeviceUUID': 'd83b2a13-9866-425f-a6bc-5236b68f5745',
+    'directCrm-session': '%7B%22deviceGuid%22%3A%22d83b2a13-9866-425f-a6bc-5236b68f5745%22%7D',
+}
         self._headers = {
-            'authority': 'web-gate.chitai-gorod.ru',
-            'accept': 'application/json, text/plain, */*',
-            'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
-            'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYyMzAxNTUsImlhdCI6MTcwNjA2MjE1NSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjMwZGRkYzFmMDJkODFlMDI4NjY1YmRjMTIzN2Y0MTU1MGQ4MzA5Y2U1NGI0ZDYxM2JlYzdhYjdhMGIzY2ExMGMiLCJ0eXBlIjoxMH0.YdM13D0HR_X9e7hHH5OSQQq11KyluaTzN503JPZLQxQ',
-            'cache-control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
-            # 'cookie': '__ddg1_=wU2qwWkFRKhKuW3J9sIt; refresh-token=; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYyMzAxNTUsImlhdCI6MTcwNjA2MjE1NSwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjMwZGRkYzFmMDJkODFlMDI4NjY1YmRjMTIzN2Y0MTU1MGQ4MzA5Y2U1NGI0ZDYxM2JlYzdhYjdhMGIzY2ExMGMiLCJ0eXBlIjoxMH0.YdM13D0HR_X9e7hHH5OSQQq11KyluaTzN503JPZLQxQ; _ga=GA1.1.430841412.1706062157; tmr_lvid=095bdb4e343f2b80995fb44fa12d7e24; tmr_lvidTS=1702778231858; digi_uc=W1sidiIsIlxuICAgICAgICAyOTcyODQyXG4gICAgICAiLDE3MDYwNjIxNTY4OThdXQ==; _ym_uid=1702778232819912034; _ym_d=1706062157; chg_visitor_id=5edc33a2-5f0e-43c3-8d02-174871342241; _ym_isad=1; _gpVisits={"isFirstVisitDomain":true,"idContainer":"100025BD"}; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; _ga_LN4Z31QGF4=GS1.1.1706062156.1.0.1706062158.58.0.0; mindboxDeviceUUID=e1a4aabd-63c9-473a-a727-4ae5b50ace72; directCrm-session=%7B%22deviceGuid%22%3A%22e1a4aabd-63c9-473a-a727-4ae5b50ace72%22%7D; _gp100025BD={"hits":1,"vc":1,"ac":1}',
-            'origin': 'https://www.chitai-gorod.ru',
-            'referer': 'https://www.chitai-gorod.ru/',
-            'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'empty',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-site': 'same-site',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        }
+    'authority': 'web-gate.chitai-gorod.ru',
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk3MDQxNzcsImlhdCI6MTcwOTUzNjE3NywiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjU5OTY3NzVlNDE1M2JlMWU5ODk4OWViYjY5MDVjZTU4NGE4N2VhZDZiYjk2YTAyNDkwODVjYTc4MTQyOTJkOTAiLCJ0eXBlIjoxMH0.e8xnl5NKFe9T1v3NHfTa3GHVdy6xbgHxjIGWfoW9RLc',
+    'cache-control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+    # 'cookie': '__ddg1_=2VXLHI0kEVc58Ik8Hj7J; refresh-token=; tmr_lvid=0d99a9ecfa17fe8aaa7b44ed0e367163; tmr_lvidTS=1706361588673; _ga=GA1.1.870661923.1709138235; _ym_uid=1706361589968627328; _ym_d=1709138235; chg_visitor_id=b26157f5-7a3d-47f0-8d6d-49315e04a52b; _gpVisits={"isFirstVisitDomain":true,"idContainer":"100025BD"}; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk3MDQxNzcsImlhdCI6MTcwOTUzNjE3NywiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjU5OTY3NzVlNDE1M2JlMWU5ODk4OWViYjY5MDVjZTU4NGE4N2VhZDZiYjk2YTAyNDkwODVjYTc4MTQyOTJkOTAiLCJ0eXBlIjoxMH0.e8xnl5NKFe9T1v3NHfTa3GHVdy6xbgHxjIGWfoW9RLc; _ym_isad=1; _ga_6JJPBGS8QY=GS1.1.1709536178.2.1.1709536187.0.0.0; digi_uc=W1sidiIsIjI5NzI4NDIiLDE3MDk1MzYxNzkwNjNdLFsidiIsIlxuICAgICAgICAyOTcyODQyXG4gICAgICAiLDE3MDk1MzYxODgwMjhdXQ==; _gp100025BD={"hits":2,"vc":1,"ac":1,"a6":1}; _ga_LN4Z31QGF4=GS1.1.1709536178.3.1.1709536189.49.0.1758121095; mindboxDeviceUUID=d83b2a13-9866-425f-a6bc-5236b68f5745; directCrm-session=%7B%22deviceGuid%22%3A%22d83b2a13-9866-425f-a6bc-5236b68f5745%22%7D',
+    'origin': 'https://www.chitai-gorod.ru',
+    'referer': 'https://www.chitai-gorod.ru/',
+    'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+}
         self._chunk_size = 10000
         self._books_info = []
         self._error_books = []
@@ -90,22 +91,23 @@ class Chitai:
                 availability = 'Буду ждать'
 
             headers = {
-                'authority': 'web-gate.chitai-gorod.ru',
-                'accept': 'application/json, text/plain, */*',
-                'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
-                'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDY0NjcwNjQsImlhdCI6MTcwNjI5OTA2NCwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjRjNjJlNTgyMGYzNzI3N2ZkNDQ1MTZiYTIxNzMwODNlZWU5MTA0ZjlmNmRhYTA4ZWNmYjk4MGZhMzcwZmE1NmYiLCJ0eXBlIjoxMH0.GlDDl6ddPkPRDnefmSWenmYiIj486QZG8hQ33v_IgWk',
-                'cache-control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
-                # 'cookie': '__ddg1_=r6HypZ7lTQmcZWfDVdME; refresh-token=; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDY0NjcwNjQsImlhdCI6MTcwNjI5OTA2NCwiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjRjNjJlNTgyMGYzNzI3N2ZkNDQ1MTZiYTIxNzMwODNlZWU5MTA0ZjlmNmRhYTA4ZWNmYjk4MGZhMzcwZmE1NmYiLCJ0eXBlIjoxMH0.GlDDl6ddPkPRDnefmSWenmYiIj486QZG8hQ33v_IgWk; _ga=GA1.1.2095788095.1706299066; tmr_lvid=095bdb4e343f2b80995fb44fa12d7e24; tmr_lvidTS=1702778231858; _ym_uid=1702778232819912034; _ym_d=1706299066; chg_visitor_id=3ec5d99d-62e1-4921-b7d3-d43a5fa5cf41; _gpVisits={"isFirstVisitDomain":true,"idContainer":"100025BD"}; _ym_isad=1; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; mindboxDeviceUUID=e1a4aabd-63c9-473a-a727-4ae5b50ace72; directCrm-session=%7B%22deviceGuid%22%3A%22e1a4aabd-63c9-473a-a727-4ae5b50ace72%22%7D; _ga_LN4Z31QGF4=GS1.1.1706361034.4.1.1706361051.43.0.0; digi_uc=W1sidiIsIjI5NzI4NDIiLDE3MDYzNjEwMzUyNjVdLFsidiIsIlxuICAgICAgICAyOTcyODQyXG4gICAgICAiLDE3MDYzNjEwNTEzNTVdLFsidiIsIlxuICAgICAgICAzMDIyNzc2XG4gICAgICAiLDE3MDYyOTkwNjU5NjddXQ==; _gp100025BD={"hits":6,"vc":1,"ac":1,"a6":1}',
-                'origin': 'https://www.chitai-gorod.ru',
-                'referer': 'https://www.chitai-gorod.ru/',
-                'sec-ch-ua': '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"',
-                'sec-ch-ua-mobile': '?0',
-                'sec-ch-ua-platform': '"Windows"',
-                'sec-fetch-dest': 'empty',
-                'sec-fetch-mode': 'cors',
-                'sec-fetch-site': 'same-site',
-                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-            }
+    'authority': 'web-gate.chitai-gorod.ru',
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk3MDQxNzcsImlhdCI6MTcwOTUzNjE3NywiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjU5OTY3NzVlNDE1M2JlMWU5ODk4OWViYjY5MDVjZTU4NGE4N2VhZDZiYjk2YTAyNDkwODVjYTc4MTQyOTJkOTAiLCJ0eXBlIjoxMH0.e8xnl5NKFe9T1v3NHfTa3GHVdy6xbgHxjIGWfoW9RLc',
+    'cache-control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+    # 'cookie': '__ddg1_=2VXLHI0kEVc58Ik8Hj7J; refresh-token=; tmr_lvid=0d99a9ecfa17fe8aaa7b44ed0e367163; tmr_lvidTS=1706361588673; _ga=GA1.1.870661923.1709138235; _ym_uid=1706361589968627328; _ym_d=1709138235; chg_visitor_id=b26157f5-7a3d-47f0-8d6d-49315e04a52b; _gpVisits={"isFirstVisitDomain":true,"idContainer":"100025BD"}; popmechanic_sbjs_migrations=popmechanic_1418474375998%3D1%7C%7C%7C1471519752600%3D1%7C%7C%7C1471519752605%3D1; access-token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk3MDQxNzcsImlhdCI6MTcwOTUzNjE3NywiaXNzIjoiL2FwaS92MS9hdXRoL2Fub255bW91cyIsInN1YiI6IjU5OTY3NzVlNDE1M2JlMWU5ODk4OWViYjY5MDVjZTU4NGE4N2VhZDZiYjk2YTAyNDkwODVjYTc4MTQyOTJkOTAiLCJ0eXBlIjoxMH0.e8xnl5NKFe9T1v3NHfTa3GHVdy6xbgHxjIGWfoW9RLc; _ym_isad=1; mindboxDeviceUUID=d83b2a13-9866-425f-a6bc-5236b68f5745; directCrm-session=%7B%22deviceGuid%22%3A%22d83b2a13-9866-425f-a6bc-5236b68f5745%22%7D; _ga_6JJPBGS8QY=GS1.1.1709536178.2.1.1709536187.0.0.0; digi_uc=W1sidiIsIjI5NzI4NDIiLDE3MDk1MzYxNzkwNjNdLFsidiIsIlxuICAgICAgICAyOTcyODQyXG4gICAgICAiLDE3MDk1MzYxODgwMjhdXQ==; _ga_LN4Z31QGF4=GS1.1.1709536178.3.1.1709536188.50.0.1758121095; _gp100025BD={"hits":2,"vc":1,"ac":1,"a6":1}',
+    'origin': 'https://www.chitai-gorod.ru',
+    'referer': 'https://www.chitai-gorod.ru/',
+    'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+}
+
             params = {
                 'city': '213',
             }
@@ -202,3 +204,4 @@ if __name__ == '__main__':
 
     chitai = Chitai(logger)
     chitai.parse()
+    # chitai._fetch_book_info('2972842')

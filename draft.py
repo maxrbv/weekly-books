@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 def labirint():
-    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\results\labirint_result_2024-01-24.xlsx'
+    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\results\labirint_result_2024-02-28.xlsx'
     df = pd.read_excel(excel_file_path, engine='openpyxl')
     json_data = df.to_json(orient='records')
 
@@ -28,7 +28,7 @@ def labirint():
 
 
 def chitai():
-    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\results\chitai_result_2024-01-24.xlsx'
+    excel_file_path = r'C:\Users\maxke\Desktop\RANDOM SCRIPTS\weekly-books\assets\results\chitai_result_2024-02-14.xlsx'
     df = pd.read_excel(excel_file_path, engine='openpyxl')
     json_data = df.to_json(orient='records')
 
@@ -271,6 +271,12 @@ def chitai():
         'preOrder. В наличии в 3 магазинах': 1,
         'preOrder. В наличии в 4 магазинах': 2,
         'preOrder. В наличии в 5 магазинах': 2,
+        'Где купить?': 0,
+        'Где купить?. В наличии в 1 магазинах': 0,
+        'Где купить?. В наличии в 2 магазинах': 0,
+        'Где купить?. В наличии в 3 магазинах': 1,
+        'Где купить?. В наличии в 4 магазинах': 1,
+        'Где купить?. В наличии в 5 магазинах': 2,
     }
     for i in range(31, 86):
         key = f'В наличии. В наличии в {i} магазинах'
@@ -326,6 +332,16 @@ def chitai():
         key = f'preOrder. В наличии в {i} магазинах'
         replace_data_chitai[key] = 10
 
+    for i in range(6, 11):
+        key = f'Где купить?. В наличии в {i} магазинах'
+        replace_data_chitai[key] = 3
+    for i in range(11, 21):
+        key = f'Где купить?. В наличии в {i} магазинах'
+        replace_data_chitai[key] = 5
+    for i in range(21, 86):
+        key = f'Где купить?. В наличии в {i} магазинах'
+        replace_data_chitai[key] = 10
+
     for entry in data:
         entry['Наличие'] = replace_data_chitai.get(entry.get('Наличие'), entry.get('Наличие'))
 
@@ -333,22 +349,14 @@ def chitai():
 
     modified_df.to_excel('modified_chitai_result.xlsx', index=False, engine='openpyxl')
 
+
 def merge():
     df1 = pd.read_excel('modified_chitai_result.xlsx')
     df2 = pd.read_excel('modified_labirint_result.xlsx')
     df = pd.concat([df1, df2], ignore_index=True)
-    df.to_excel('result.xlsx', index=False)
+    df.to_excel('chitai_lab_result.xlsx', index=False)
 
 
-# chitai()
-# labirint()
+chitai()
+labirint()
 merge()
-
-
-
-
-
-
-
-
-
